@@ -1,7 +1,7 @@
 {
   "name": "upload-middleware",
   "description": "upload middleware for express running on top of node-formidable",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "homepage": "https://github.com/Tug/upload-middleware",
   "repository": {
     "type": "git",

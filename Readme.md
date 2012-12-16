@@ -5,6 +5,11 @@ upload-middleware on top of [formidable][1]
 See examples/app.js for demo code
 
 
+## TODO
+
+Refactoring needed
+
+
 ## License
 
 Written by Tugdual de Kerviler, licensed under the MIT license.
