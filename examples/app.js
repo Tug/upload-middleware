@@ -1,4 +1,3 @@
-
 var express = require('express')
   , upload_middleware = require('../index');
 
@@ -11,7 +10,7 @@ app.get('/', function(req, res) {
     + '</form>');
 });
 
-app.post('/', upload_middleware, function(req, res, next) {
+app.post('/', upload_middleware.upload, function(req, res, next) {
 
   var fileinfo = req.form.fileInfo;
   var filesize = req.form.fileInfo.filesize;
@@ -40,11 +39,12 @@ app.post('/', upload_middleware, function(req, res, next) {
     // unlink file here
   });
   
+  // simulate async operation here (read can also be called sync)
   setTimeout(function() {
     req.form.read();
   }, 500);
   
-});
+}, upload_middleware.errorHandler);
 
 app.listen(3000);
 console.log('Express app started on port 3000');
