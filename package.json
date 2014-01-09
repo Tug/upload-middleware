@@ -16,7 +16,7 @@
     "node": "*"
   },
   "dependencies": {
-    "formidable": ">= 1.0.8"
+    "formidable": "1.0.8"
   },
   "devDependencies": {}
 }
